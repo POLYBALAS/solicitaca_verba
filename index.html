@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS POLYBLAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <div id="inicial" align="center">
+    <div id="formularios" class="colorido" align="center">
+        <h1 align="center">SOLICITAÇÃO DE VERBA PARA COMBUSTIVEL</h1>
+        <h4>(SEMPRE DIGITAR EM MAIÚSCULO)</h4>
+        <form action="https://api.sheetmonkey.io/form/3VptRN5u4U8WGANoyuvL7Y" method="post" id="VERBACOMBUSTIBEL" class="formulario">
+           
+            <div class="form-item">
+                <label for="FUNCIONÁRIO">Funcionário:</label>
+                <input type="text" id="FUNCIONÁRIO" name="FUNCIONÁRIO" required oninput="this.value = this.value.toUpperCase()">
+            </div>
+
+            <div class="form-item">
+                <label for="DATA">DATA:</label>
+                <input type="date" id="DATA" name="DATA" required>
+            </div>
+
+            <div class="form-item">
+                <label for="VALOR SOLICITADO">VALOR SOLICITADO:</label>
+                <input type="number" id="VALOR SOLICITADO" name="VALOR SOLICITADO" required>
+            </div>
+
+            <br>
+
+            <div class="form-item">
+                <label for="SEMANA">SEMANA DE SOLICITAÇÃO:</label>
+                <div class="SEMANA">
+                    <label for="1ºSEMANA">1ºSEMANA</label>
+                    <input type="radio" id="1ºSEMANA" name="SEMANA" value="1ºSEMANA" required>
+                    <label for="1ºSEMANA">2ºSEMANA</label>
+                    <input type="radio" id="2ºSEMANA" name="SEMANA" value="2ºSEMANA" required>
+                    <label for="1ºSEMANA">3ºSEMANA</label>
+                    <input type="radio" id="3ºSEMANA" name="SEMANA" value="3ºSEMANA" required>
+                    <label for="1ºSEMANA">4ºSEMANA</label>
+                    <input type="radio" id="4ºSEMANA" name="SEMANA" value="4ºSEMANA" required>
+                    <label for="1ºSEMANA">5ºSEMANA</label>
+                    <input type="radio" id="5ºSEMANA" name="SEMANA" value="5ºSEMANA" required>
+                    
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="red-button">Enviar</button>
+                <button type="reset" class="red-button">Limpar Campos</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function transformarMaiusculo(input) {
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+   </body>
+</html>
